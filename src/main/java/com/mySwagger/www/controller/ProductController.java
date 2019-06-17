@@ -15,7 +15,8 @@ import io.swagger.annotations.ApiResponses;
 
 
 @RestController
-@RequestMapping(value = {"/product/"})public class ProductController {
+@RequestMapping(value = {"/product/"})
+public class ProductController {
 
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
     public ResponseEntity<Product> get(@PathVariable Long id) {
