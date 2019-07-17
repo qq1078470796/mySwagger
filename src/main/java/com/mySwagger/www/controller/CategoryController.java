@@ -40,7 +40,6 @@ public class CategoryController {
 
 	    @RequestMapping(method = RequestMethod.PUT)
 	    @ApiOperation(value = "更新一个分类")
-	    
 	    public ResponseEntity<String> update(Category category) {
 	    	categoryService.update(category);
 	        return ResponseEntity.ok("SUCCESS");
